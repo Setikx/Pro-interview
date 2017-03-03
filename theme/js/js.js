@@ -8,7 +8,9 @@
             slidesToShow: 1,
             centerMode: true,
             variableWidth: true,
-            adaptiveHeight: true
+            adaptiveHeight: true,
+            arrows: false
+
 
     });
 });
