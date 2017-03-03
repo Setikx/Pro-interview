@@ -1,76 +1,17 @@
 header {
-  width: 1224px;
-  height: 228px;
-  margin: 0 auto;
-  background-color: white;
-  font-family: 'RobotoCondensedRegular';
+  width: 100%;
+  margin-left: 96px;
+  padding-left: 43.3%;
 
-
-  .header-logo {
+  span {
     display: inline-block;
-    vertical-align: top;
-    padding-left: 94px;
-    padding-top: 17px;
-    position: relative;
-    z-index: 10;
-  }
+    color: red;
+    font-size: 26px;
+    margin: 56px 0 0 0;
+    font-family: 'FedraSansPro-Normal';
 
-  nav {
-    display: inline-block;
-    padding-top: 145px;
-    margin-left: 120px;
-
-    ul {
-      display: inline-block;
-      margin: 0;
-      padding: 0;
-
-      li {
-        display: inline-block;
-
-        &:hover {
-          opacity: 0.7;
-        }
-
-        a {
-          font-size: 24px;
-          margin-right: 40px;
-          color: #000000;
-        }
-      }
-    }
-  }
-
-  .header-contacts {
-    display: inline-block;
-    float: right;
-    padding-top: 93px;
-
-    .contacts-span {
-      display: block;
-      text-align: right;
-      padding-right: 37px;
-    }
-
-    .contacts-time {
-
-      strong {
-        color: deepskyblue;
-        font-style: italic;
-      }
-    }
-
-    .contacts-text {
-      text-transform: uppercase;
-      font-size: 22px;
-    }
-
-    .contacts-telephon {
-      font-size: 32px;
-      color: deepskyblue;
-      margin-top: -7px;
-      font-family: 'RobotoCondensedBold';
-
+    strong {
+      color: red;
     }
   }
 }
