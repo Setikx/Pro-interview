@@ -1,6 +1,6 @@
-
+$aside_width: 96px;
 aside {
-  width: 96px;
+  width: $aside_width;
   height: 100vh;
   position: fixed;
   background-color: red;
@@ -8,7 +8,6 @@ aside {
 }
 
 .main-content {
-  width: 100%;
   margin-left: 96px;
   font-size: 0;
 }
@@ -17,7 +16,6 @@ $left-part-width: 43.3%;
 .left-part {
   display: inline-block;
   width: $left-part-width;
-  height: 700px;   //////////////////////////////////////////////////////////////////////
   font-size: 16px;
 
 }
@@ -32,13 +30,6 @@ $left-part-width: 43.3%;
 
   }
 }
-
-.slick-slider {
-
-}
-
-
-
 
 .right-part {
   display: inline-block;
