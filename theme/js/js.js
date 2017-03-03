@@ -1,26 +1,17 @@
 (function ($) {
 
-  if (typeof Drupal != 'undefined') {
-    Drupal.behaviors.wcportalMobileTheme = {
-      attach: function (context, settings) {
-        init();
-      },
 
-      completedCallback: function () {
-        // Do nothing. But it's here in case other modules/themes want to override it.
-      }
-    }
-  }
+    $(document).ready(function(){
+        $('.slick-slider').slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true,
+            adaptiveHeight: true
 
-  $(function () {
-    if (typeof Drupal == 'undefined') {
-      init();
-    }
-  });
-
-  function init() {
-
-  }
+    });
+});
 
 })(jQuery);
 
