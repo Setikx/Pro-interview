@@ -11,6 +11,36 @@ aside {
   margin-left: 96px;
   font-size: 0;
 }
+#page-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 96px;
+  height: 100vh;
+  width: 15%;
+  opacity: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    opacity: 1;
+  }
+}
+
+#page-down {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 15%;
+  opacity: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    opacity: 1;
+  }
+}
 
 $left-part-width: 43.3%;
 .left-part {
@@ -22,12 +52,15 @@ $left-part-width: 43.3%;
 
 .left-part {
   text-align: right;
+  position: relative;
+
 
   img {
     display: inline-block;
     margin-right: 25px;
-    margin-top: 45px;
-
+    position: fixed;
+    left: 20%;
+    @include transform (scale(.9));
   }
 }
 
@@ -39,8 +72,8 @@ $left-part-width: 43.3%;
   padding-right: 30%;
 
   .manager--block {
-    padding-top: 42px;
-    padding-bottom: 90px;
+    padding-top: 20px;
+    padding-bottom: 50px;
 
     h1 {
       width: 550px;
@@ -51,7 +84,7 @@ $left-part-width: 43.3%;
     }
 
     p {
-      margin: 32px 0 0 0;
+      margin: 20px 0 0 0;
       font-size: 23px;
       font-family: "MuseoSansCyrl-500";
       line-height: 1.35;
@@ -60,7 +93,7 @@ $left-part-width: 43.3%;
   }
 
   .q_and_a--block {
-    padding: 50px 0 50px 72px;
+    padding: 40px 0 50px 72px;
     line-height: 1.35;
 
     p {

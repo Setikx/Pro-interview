@@ -26,13 +26,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'FranklinGothicBookITC-Regular';
-  src: url("../fonts/FranklinGothicBookITC-Regular.eot");
-  src: url("../fonts/FranklinGothicBookITC-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FranklinGothicBookITC-Regular.woff") format("woff"), url("../fonts/FranklinGothicBookITC-Regular.ttf") format("truetype"), url("../fonts/FranklinGothicBookITC-Regular.svg#FranklinGothicBookITC-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -500,7 +493,7 @@ header span {
   display: inline-block;
   color: red;
   font-size: 26px;
-  margin: 56px 0 0 0;
+  margin: 30px 0 0 0;
   font-family: 'FedraSansPro-Normal';
 }
 header span strong {
@@ -520,6 +513,35 @@ aside {
   font-size: 0;
 }
 
+#page-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 96px;
+  height: 100vh;
+  width: 15%;
+  opacity: 0;
+  cursor: pointer;
+}
+#page-up:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  opacity: 1;
+}
+
+#page-down {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 15%;
+  opacity: 0;
+  cursor: pointer;
+}
+#page-down:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  opacity: 1;
+}
+
 .left-part {
   display: inline-block;
   width: 43.3%;
@@ -528,11 +550,17 @@ aside {
 
 .left-part {
   text-align: right;
+  position: relative;
 }
 .left-part img {
   display: inline-block;
   margin-right: 25px;
-  margin-top: 45px;
+  position: fixed;
+  left: 20%;
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .right-part {
@@ -543,8 +571,8 @@ aside {
   padding-right: 30%;
 }
 .right-part .manager--block {
-  padding-top: 42px;
-  padding-bottom: 90px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 .right-part .manager--block h1 {
   width: 550px;
@@ -554,13 +582,13 @@ aside {
   color: red;
 }
 .right-part .manager--block p {
-  margin: 32px 0 0 0;
+  margin: 20px 0 0 0;
   font-size: 23px;
   font-family: "MuseoSansCyrl-500";
   line-height: 1.35;
 }
 .right-part .q_and_a--block {
-  padding: 50px 0 50px 72px;
+  padding: 40px 0 50px 72px;
   line-height: 1.35;
 }
 .right-part .q_and_a--block p {
